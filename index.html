@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=640" />
+		<link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+		<link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+		<link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+		<script type="text/javascript" src="javascripts/modernizr.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.1.7.1.min.js"></script>
+		<script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#main_content').headsmart()
+			})
+		</script>
+		<title>Jogo Um</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css"></style>
+		<script type="text/javascript" src="js/utils.js"></script>
+		<script type="text/javascript" src="js/jogo.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+	<body>
+		<div class="shell">
+			<header>
+				<span class="ribbon-outer">
+					<span class="ribbon-inner">
+						<h1>Jogo Um</h1>
+						<h2></h2>
+					</span>
+					<span class="left-tail"></span>
+					<span class="right-tail"></span>
+				</span>
+			</header>
+			<section id="downloads">
+				<span class="inner">
+					<a href="https://github.com/crisstanza/jogo-um/zipball/master" class="zip"></a><a href="https://github.com/crisstanza/jogo-um/tarball/master" class="tgz"></a>
+				</span>
+			</section>
+			<span class="banner-fix"></span>
+			<section id="main_content">
+				<h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Jogo Um</h3>
+				<br />
+				<div id="tela-inicial" class="Tela Show">
+					<h4>Jogo Um</h4>
+					<br />
+					<div id="tela-inicial-bt-jogar" class="Bt">Jogar!</div>
+					<br />
+					<div id="tela-inicial-bt-instrucoes" class="Bt">Instru&ccedil;&otilde;es</div>
+					<br />
+					<div id="tela-inicial-bt-ranking" class="Bt">Ranking</div>
+				</div>
+				<div id="tela-jogo" class="Tela Hide">
+					<div>Fase: <span id="display-fase">?</span></div>
+					<br />
+					<div id="display-clicks">
+						<div class="HandClick"></div>
+					</div>
+					<div id="display-fim-do-jogo" class="Hide">
+						<b>Fim do jogo!</b><br />
+						<br />
+						Voc&ecirc; errou a <span id="display-erros">?</span> <span id="display-erros-palavra-posicao">?</span>.<br />
+						Deseja <a href="#jogar" id="tela-jogo-bt-jogar-novamente">jogar novamente</a> ou <a href="#ultima-jogada" id="tela-jogo-bt-ultima-jogada">rever a sua &uacute;ltima jogada</a>?
+					</div>
+					<div id="display-voce-acertou" class="Hide">
+						Parab&eacute;ns, voc&ecirc; acertou! Pr&oacute;xima fase...
+					</div>
+					<br clear="all" />
+					<div id="main-board"></div>
+					<br />
+					<div>Tempo: <span id="display-tempo">?</span></div>
+				</div>
+				<div id="tela-instrucoes" class="Tela Hide">
+					<h4>Como Jogar</h4>
+					Memorize as casas numeradas na ordem em que elas aparecem.<br />
+					<br />
+					<div id="tela-instrucoes-bt-voltar" class="Bt">voltar</div>
+				</div>
+				<div id="tela-ranking" class="Tela Hide">
+					<h4>Ranking</h4>
+					<table id="ranking-table" border="1" cellpading="4" cellspacing="0">
+						<tr>
+							<th>Nome</th>
+							<th>Fase</th>
+							<th>Tempo</th>
+						</tr>
+						<tr>
+							<td>Lorem Ipsum</td>
+							<td>9</td>
+							<td>02:17</td>
+						</tr>
+						<tr>
+							<td>dolor</td>
+							<td>9</td>
+							<td>02:58</td>
+						</tr>
+						<tr>
+							<td>Sit Amet</td>
+							<td>7</td>
+							<td>01:13</td>
+						</tr>
+					</table>
+					<br />
+					<div id="tela-ranking-bt-voltar" class="Bt">voltar</div>
+				</div>
+				<h3>&nbsp;</h3>
+			</section>
+			<footer>
+				<span class="ribbon-outer">
+					<span class="ribbon-inner"><p>&nbsp;</p></span>
+					<span class="left-tail"></span>
+					<span class="right-tail"></span>
+				</span>
+				<p></p>
+				<span class="octocat"></span>
+			</footer>
+		</div>
+	</body>
+</html>
+
