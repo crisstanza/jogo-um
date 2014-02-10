@@ -14,7 +14,7 @@ table {
 	display: none;
 }
 
-div.Bt {
+div.Bt, .Clicavel {
 	cursor: pointer;
 }
 

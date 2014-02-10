@@ -3,7 +3,7 @@
 	var jogo = undefined;
 
 	function init() {
-		jogo = new Jogo();
+		jogo = Jogo.instance;
 		initTelaInicial();
 		initTelaInstrucoes();
 		initTelaJogo();
@@ -50,15 +50,13 @@
 		var length = telas.length;
 		for (var i = 0 ; i < length ; i++) {
 			var tela = telas[i];
-			Utils.removeClass(tela, 'Show');
-			Utils.addClass(tela, 'Hide');
+			Utils.swapClass(tela, 'Show', 'Hide');
 		}
 	}
 
 	function show(id) {
 		var element = document.getElementById(id);
-		Utils.removeClass(element, 'Hide');
-		Utils.addClass(element, 'Show');
+		Utils.swapClass(element, 'Hide', 'Show');
 	}
 
 	window.addEventListener('load', init, false);
